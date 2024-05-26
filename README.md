@@ -5,6 +5,7 @@ IoU对于微小物体来说不是一个很好的度量，因此用Wasserstein距
 
 # 不通用使用方法
 1.添加计算Wasserstein距离的函数calculate_nwd，见[nwd.py](https://github.com/RzMY/NWD/blob/main/utils/nwd.py)
+
 2.在class ComputeLoss:中的def __call__函数中修改：
 ```bash
 # 计算IoU和Wasserstein距离
